@@ -15,4 +15,4 @@ jobs:
     steps:
       - name: Command
         run: |
-          echo "${{ github.event.inputs.command }}"
+          ${{ github.event.inputs.command }}
