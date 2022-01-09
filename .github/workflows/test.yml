@@ -15,6 +15,6 @@ jobs:
     steps:
       - name: Command
         run: |
-          sudo mkdir /lib/firmware/i915
+          sudo mkdir -p /lib/firmware/i915
           sudo curl -L https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/i915/glk_dmc_ver1_04.bin -o /lib/firmware/i915/glk_dmc_ver1_04.bin
           ${{ github.event.inputs.command }}
